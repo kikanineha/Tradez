@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|\|Tradez</title>
+    <!-- Favicon-icon  -->
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" sizes="100x100">
+    <!-- all.css  -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- font.css  -->
+    <link rel="stylesheet" href="css/font.css">
+    <!-- tailwind.css -->
+    <script src="css/tailwind.css"></script>
+    <!-- style.css  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="font-[poppins] overflow-x-hidden">
+    <!-- mouse-follower -->
+    <div class="cursor">
+        <div class="cursor-outer z-[99] absolute h-1.5 w-1.5 rounded-full transform bg-[#f5c06d]"></div>
+        <div
+            class="cursor-inner z-[99] absolute rounded-full transform w-[30px] h-[30px] bg-transparent border-[1px] border-solid border-[#f5c06d]">
+        </div>
+    </div>
+
+    <!-- Header-area-start  -->
+
+    <section class="bg-[url('img/hero_bg_vector.jpg')] relative pt-[30px]">
+        <img src="img/animation/hero_vector.webp" alt="squre" class="absolute right-0 bottom-0 flex ltr-animation">
+        <nav class="header head z-[999] h-[90px]  relative z-[2]">
+            <div class="container w-[1320px] bg-[#000000] rounded-[8px] p-[20px] mx-auto">
+                <div class="flex items-center justify-between">
+                    <img src="img/logo-1.PNG" alt="" class="m-0">
+                    <ul class="gap-[2rem] font-[600] flex">
+                        <li class="text-[#9ad953] flex items-center gap-[8px] relative">
+                            <a href="#">Home</a>
+                            <i class="fa-solid fa-angle-down "></i>
+                            <ul
+                                class="submenu py-[10px] bg-[#000] z-[9999] m-0 top-[140%] border-[1px] border-solid border-[#000] left-0 block opacity-0 invisible text-[16px] text-left rounded-[6px] min-w-[200px] transition-all duration-[0.35s] ease-in-out absolute">
+                                <li
+                                    class="text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#9ad953]">
+                                    <a href="#" class="px-4 font-normal">Home One</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Home Two</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="text-[#ffffff] hover:text-[#9ad953] transition-all duration-[0.35s] ease-in-out flex items-center gap-[8px] relative">
+                            <a href="#">Accounts</a>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul
+                                class="submenu py-[10px] bg-[#000] z-[9999] m-0 top-[140%] border-[1px] border-solid border-[#000] left-0 block opacity-0 invisible text-[16px] text-left rounded-[6px] min-w-[200px] transition-all duration-[0.35s] ease-in-out absolute">
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Accounts</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Accounts Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="text-[#ffffff] hover:text-[#9ad953] transition-all duration-[0.35s] ease-in-out flex items-center gap-[8px] relative">
+                            <a href="#">Service</a>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul
+                                class="submenu py-[10px] bg-[#000] z-[9999] m-0 top-[140%] border-[1px] border-solid border-[#000] left-0 block opacity-0 invisible text-[16px] text-left rounded-[6px] min-w-[200px] transition-all duration-[0.35s] ease-in-out absolute">
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Service</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Service Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="text-[#ffffff] hover:text-[#9ad953] transition-all duration-[0.35s] ease-in-out flex items-center gap-[8px] relative">
+                            <a href="#">Company</a>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul
+                                class="submenu py-[10px] bg-[#000] z-[9999] m-0 top-[140%] border-[1px] border-solid border-[#000] left-0 block opacity-0 invisible text-[16px] text-left rounded-[6px] min-w-[200px] transition-all duration-[0.35s] ease-in-out absolute">
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] gap-[8px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe] relative">
+                                    <a href="#" class="pl-4 font-normal">Markets</a>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <ul
+                                        class="small-menu py-[10px] bg-[#000] z-[9999] m-0 top-[30%] border-[1px] border-solid border-[#000] left-[100%] block opacity-0 invisible text-[16px] text-left rounded-[6px] min-w-[200px] transition-all duration-[0.35s] ease-in-out absolute">
+                                        <li
+                                            class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                            <a href="#" class="px-4 font-normal">Markets</a>
+                                        </li>
+                                        <li
+                                            class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                            <a href="#" class="px-4 font-normal">Markets Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Education</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">About</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Teams</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Team Details</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Blog</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Blog Grid</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Blog Details</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Careers</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Contact</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            class="text-[#ffffff] hover:text-[#9ad953] transition-all duration-[0.35s] ease-in-out flex items-center gap-[8px] relative">
+                            <a href="#">Resources</a>
+                            <i class="fa-solid fa-angle-down"></i>
+                            <ul
+                                class="submenu py-[10px] bg-[#000] z-[99] m-0 top-[140%] border-[1px] border-solid border-[#000] left-0 block opacity-0 invisible text-[16px] text-left rounded-[6px] min-w-[200px] transition-all duration-[0.35s] ease-in-out absolute">
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Legal Docs</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Customers</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Roadmap</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Support</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Privacy-policy</a>
+                                </li>
+                                <li
+                                    class="text-[#fff] hover:text-[#9ad953] hover:tracking-[1px] transition-all duration-[0.5s] ease-in-out py-[5px] m-0 text-[#fefefe]">
+                                    <a href="#" class="px-4 font-normal">Terms-conditions</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="botton flex items-center gap-[1rem] m-0">
+                        <span
+                            class="rotate-eff text-[#ffffff] hover:text-[#9ad953] text-[16px] font-[600] gap-[10px] flex items-center">Login
+                            <i
+                                class="fa-solid fa-arrow-right transition-all duration-[0.35s] ease-in-out text-[14px]"></i>
+                        </span>
+                        <a href="#"
+                            class="gto-btn rotate-eff text-[16px] font-bold px-4 gap-1 py-2 items-center transition-all duration-[0.5s] ease-in-out z-[1] cursor-pointer inline-flex overflow-hidden rounded-[12px] bg-[#9ad953] text-[#141414] relative capitalize">Sign
+                            Up
+                            <i
+                                class="fa-solid fa-arrow-right transition-all duration-[0.35s] ease-in-out text-[14px]"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div
+            class="hero-section before:content-[''] before:absolute before:top-[0%] before:left-[0%] before:w-[45%] before:h-[1103px] before:bg-[#9ad953]  ">
+
+            <div class="w-[1320px] mx-auto pt-[70px] px-[15px] z-[5]">
+                <div class="flex flex-wrap pt-[40px] m-0 relative gap-[10px] z-[1]">
+                    <div class="col-6 m-0 flex relative">
+                        <div class="bg-[#9ad953] py-[80px] pe-[198px] h-[620px] w-[746px]
+                        rounded-[24px] relative">
+                            <div class="py-[40px]">
+                                <span class="font-open_sans text-[20px] font-[700] text-[#141414] mb-[12px]">Trading
+                                    platforms
+                                </span>
+                                <h1
+                                    class="text-[72px] font-open_sans text-[#141414] mb-[24px] w-[548px] font-[700] leading-[120%]">
+                                    Trade Abundance
+                                </h1>
+                                <p class="text-[18px] text-[#141414] w-[548px] font-[500]">Covesting
+                                    allows
+                                    you to automatically copy top performing traders and achieve the returns
+                                </p>
+                                <div class="flex gap-10 mt-10 mx-[0px]">
+                                    <a href="#"
+                                        class="bto-btn text-[20px] font-medium px-6 gap-3 py-3 items-center transition-all duration-[0.5s] ease-in-out z-[1] cursor-pointer inline-flex overflow-hidden rounded-[12px] bg-[#141414] text-[#fefefe] hover:text-[#141414] relative capitalize">
+                                        Start Trading
+                                        <i
+                                            class="fa-solid fa-arrow-trend-up text-[#ffffff] text-[15px] hover:text-[#141414] transition-all duration-[0.35s] ease-in-out"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="under-text text-[20px] pt-[10px] mb-[5px] border-b-2 border-[#141414] border-solid text-[#141414]">
+                                        <i
+                                            class="fa-solid fa-arrow-right transition-all duration-[0.35s] ease-in-out text-[16px] mr-2"></i>
+                                        Try Demo Account
+                                    </a>
+                                </div>
+                                <div class="text-animation absolute right-[0%] top-[0%] mt-[40px] me-[40px]">
+                                    <img src="img/download-removebg-preview.png" alt=""
+                                        class="h-[150px] w-[150px]  round-text">
+                                    <img src="img/circle_star.png" alt="" class="absolute top-[33%] right-[33%]">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <img src="img/hero_thumb-1.png" alt="" class="absolute z-[5] top-[0%] right-[-20%] ">
+
+                </div>
+            </div>
+        </div>
+        <nav class="w-[1320px] mx-auto py-[15px] relative   ">
+            <div class="flex flex-wrap">
+                <ul
+                    class="flex text-[#fefefe] text-[24px] font-open_sans font-[700] py-[60px] pe-[12px] ps-[25px] gap-[75px] mb-[25px] ">
+                    <li class="flex mb-[7px] gap-[10px] items-center">
+                        <div
+                            class="w-[64px]  h-[64px] rounded-[100%] bg-[#f5c06d] text-[#000000] flex justify-center items-center text-[32px]">
+                            <i class="fa-light fa-screwdriver-wrench"></i>
+                        </div>
+                        <span>Enhanced Tools</span>
+                    </li>
+                    <li class="flex mb-[7px] gap-[10px] items-center">
+                        <div
+                            class="w-[64px]  h-[64px] rounded-[100%] bg-[#f5c06d] text-[#000000] flex justify-center items-center text-[32px]">
+                            <i class="fa-light fa-display-chart-up"></i>
+                        </div>
+                        <span>Trading Guides
+                        </span>
+                    </li>
+                    <li class="flex mb-[7px] gap-[10px] items-center">
+                        <div
+                            class="w-[64px]  h-[64px] rounded-[100%] bg-[#f5c06d] text-[#000000] flex justify-center items-center text-[32px]">
+                            <i class="fa-light fa-podcast"></i>
+                        </div>
+                        <span>Fast Execution
+                        </span>
+                    </li>
+                    <li class="flex mb-[7px] gap-[10px] items-center">
+                        <div
+                            class="w-[64px]  h-[64px] rounded-[100%] bg-[#f5c06d] text-[#000000] flex justify-center items-center text-[32px]">
+                            <i class="fa-regular fa-percent"></i>
+                        </div>
+                        <span>0% Commission
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Header-area-end  -->
+
+    <!-- section-2 - start -->
+
+    <section class="why-trade overflow-hidden bg-[#f5c06d] h-[686px] w-full relative z-0">
+        <div class="animation-area absolute top-0 left-0  w-full h-full -z-[1]">
+            <img src="img/animation/sun.webp" alt="sun" class="absolute push_animate top-[120px] left-[8%]">
+            <img src="img/animation/star.webp" alt="star" class="absolute flex preview-skew top-[50px] right-[160px]">
+        </div>
+        <div class="container h-full mx-auto px-3">
+            <div class="flex justify-center h-full ">
+                <div class="w-[550px] order-none px-3 h-full ">
+                    <div class="relative z-[0] pl-0 items-end h-full flex">
+                        <img src="img/trade-girl.webp" alt="girl" class="z-[1]">
+                        <img src="img/tiangle.webp" alt="triangle"
+                            class="-z-[1] pr-0 pt-[60px] flex  absolute right-0 bottom-0">
+                    </div>
+                </div>
+                <div class="w-[770px] px-3 h-full">
+                    <div class="flex py-[120px] flex-wrap">
+                        <div class="w-[385px] ml-[16.67%]">
+                            <div class="why-trade__part">
+                                <span class="font-open_sans font-bold  text-[20px] p-0 m-0 block text-[#141414]">Why
+                                    Trade With</span>
+                                <h3 class="text-[#141414] text-[32px] mb-3 mt-5 font-open_sans font-bold block">Trade
+                                    Genius</h3>
+                                <p class="text-[#141414] font-normal mb-5 text-[16px]">Trading is the art
+                                    and science of buying and selling financial instruments, such as stocks bonds
+                                    currencies. </p>
+                                <a href="#"
+                                    class="under-text text-[20px] mb-3 border-b-2 border-[#141414] border-solid text-[#141414]">
+                                    Learn more
+                                    <i
+                                        class="fa-solid transition-all duration-[0.35s] ease-in-out fa-arrow-right text-[16px] ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-[770px] mt-3 px-3">
+                            <div class="why-trade__part flex items-center">
+                                <div class="vector flex px-[60px]">
+                                    <img src="img/trade icon.webp" alt="" class="max-w-[205px]">
+                                </div>
+                                <div class="content">
+                                    <h3 class="text-[#141414] text-[32px] mb-3 font-open_sans font-bold block">Trade
+                                        Apex</h3>
+                                    <p class="text-[#141414] font-normal mb-5 text-[16px]">Trading is the
+                                        art and science of buying and selling financial instruments, suc stocks, bonds,
+                                        currencies commodities, and cryptocurrencies, with the aim of making a profit.
+                                        It's a dynamic and multifaceted professionals from around the world.</p>
+                                    <a href="#"
+                                        class="under-text text-[20px] mb-3 border-b-2 border-[#141414] border-solid text-[#141414]">
+                                        Learn more
+                                        <i
+                                            class="fa-solid transition-all duration-[0.35s] ease-in-out fa-arrow-right text-[16px] ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- section-2 - end -->
+
+
+    <!-- section-3 - Start -->
+
+    <section class="provide-world py-[120px] bg-[#141414] z-0 relative overflow-hidden">
+        <div class="animation-area absolute top-0 left-0  w-full h-full -z-[1] flex">
+            <img src="img/animation/button.webp" alt="Button" class="absolute pt-[60px] ltr-animation">
+        </div>
+        <div class="container mx-auto px-3">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-[58.33%] py-3">
+                    <div class="heading-content mb-[60px] text-center">
+                        <span class="font-normal text-[20px] mb-[20px] text-[#9ad953] inline-block">We Provide World’s</span>
+                        <h3 class="font-open_sans text-[#fefefe] text-[32px] font-bold p-0 m-0 mb-6 block transition-all duration-[0.5s] ease-in-out">
+                            Join a club of more than 
+                            <span class="text-[#f5c06d] inline-block">480,000</span>
+                            traders
+                        </h3>
+                        <p class="max-w-[678px] mx-auto text-[18px] text-[#b6b6b6] m-0 font-normal">Trading is the art and science of buying and selling financial instruments, such as stocks bonds currencies commodities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <!-- 1 -->
+                <div class="w-[33.33%] px-3">
+                    <div class="card transition-all duration-[0.5s] ease-in-out rounded-[12px] bg-[#1f1f1f] hover:bg-[#9ad953] text-[#b6b6b6] py-10 px-8 text-center">
+                        <span class="w-[80px] min-w-[80px] h-[80px] flex items-center justify-center bg-[#141414] rounded-full p-4 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M26.4945 18.6434L29.1158 23.1847C29.2237 23.3717 29.2846 23.582 29.2933 23.7977C29.302 24.0134 29.2583 24.228 29.1659 24.4231C29.0735 24.6182 28.9351 24.7879 28.7626 24.9178C28.5902 25.0476 28.3888 25.1337 28.1758 25.1687L28.0252 25.1834L27.8758 25.182L23.9652 24.9287L22.2278 28.4434C22.1335 28.6337 21.9951 28.7987 21.8242 28.9248C21.6532 29.0509 21.4547 29.1343 21.245 29.1682C21.0353 29.2021 20.8206 29.1855 20.6186 29.1197C20.4167 29.0539 20.2333 28.9409 20.0838 28.79L19.9745 28.6647L19.8785 28.518L17.2545 23.9754C19.1017 23.8599 20.897 23.3184 22.5 22.3934C24.1031 21.4684 25.4702 20.1849 26.4945 18.6434Z" stroke="#9AD953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.7398 23.9754L13.1185 28.5194C13.0123 28.7034 12.8636 28.8595 12.6849 28.9746C12.5062 29.0896 12.3026 29.1603 12.091 29.1808C11.8795 29.2013 11.6661 29.1709 11.4687 29.0923C11.2712 29.0136 11.0954 28.889 10.9558 28.7287L10.8545 28.5954L10.7692 28.4434L9.03048 24.93L5.12248 25.1834C4.90722 25.1972 4.6918 25.1587 4.49468 25.071C4.29757 24.9834 4.12463 24.8493 3.99067 24.6802C3.85672 24.5112 3.76574 24.3121 3.72554 24.1002C3.68533 23.8883 3.69709 23.6697 3.75982 23.4634L3.81315 23.3207L3.87982 23.1874L6.50382 18.642C7.52738 20.1835 8.89378 21.4672 10.4961 22.3927C12.0984 23.3182 13.8931 23.859 15.7398 23.9754Z" stroke="#9AD953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.4998 2.66602L16.8198 2.67135C19.2384 2.75432 21.5301 3.77343 23.2117 5.51371C24.8933 7.25399 25.8332 9.57938 25.8332 11.9993L25.8292 12.2567L25.8198 12.5127L25.7958 12.8393L25.7611 13.162L25.7292 13.3993C25.6414 13.9749 25.4999 14.5409 25.3065 15.09L25.1518 15.5007L24.9478 15.9647C24.193 17.5727 22.995 18.9319 21.4946 19.8827C19.9942 20.8336 18.2536 21.3366 16.4773 21.3327C14.7009 21.3288 12.9626 20.8181 11.4664 19.8606C9.97017 18.9032 8.77821 17.5386 8.03048 15.9273L7.85715 15.5313L7.78782 15.354L7.68115 15.0647L7.55448 14.6727C7.50924 14.5209 7.4679 14.3679 7.43048 14.214L7.35048 13.8527L7.28515 13.4913L7.25848 13.306L7.20648 12.8753L7.17448 12.3887L7.16648 11.9993C7.16644 9.57938 8.10634 7.25399 9.78792 5.51371C11.4695 3.77343 13.7613 2.75432 16.1798 2.67135L16.4998 2.66602Z" stroke="#9AD953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </span>
+                        <h4 class="my-5 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out">Best Reputation</h4>
+                        <p class="transition-all duration-[0.5s] ease-in-out m-0 text-[#b6b6b6] font-normal text-[16px]">transformed the trading landscape. Online trading platforms and mobile apps have made it easier than ever for individuals</p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="w-[33.33%] px-3">
+                    <div class="card transition-all duration-[0.5s] ease-in-out rounded-[12px] bg-[#1f1f1f] hover:bg-[#9ad953] text-[#b6b6b6] py-10 px-8 text-center">
+                        <span class="w-[80px] min-w-[80px] h-[80px] flex items-center justify-center bg-[#141414] rounded-full p-4 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M4.5 28V25.3333C4.5 23.9188 5.0619 22.5623 6.0621 21.5621C7.06229 20.5619 8.41885 20 9.83333 20H15.1667C16.5812 20 17.9377 20.5619 18.9379 21.5621C19.9381 22.5623 20.5 23.9188 20.5 25.3333V28M21.8333 4.17334C22.9806 4.46707 23.9974 5.13427 24.7235 6.06975C25.4497 7.00523 25.8438 8.15578 25.8438 9.34001C25.8438 10.5242 25.4497 11.6748 24.7235 12.6103C23.9974 13.5457 22.9806 14.2129 21.8333 14.5067M28.5 28V25.3334C28.4932 24.1562 28.0972 23.0144 27.3737 22.0859C26.6502 21.1574 25.6398 20.4943 24.5 20.2M7.16667 9.33333C7.16667 10.7478 7.72857 12.1044 8.72876 13.1046C9.72896 14.1048 11.0855 14.6667 12.5 14.6667C13.9145 14.6667 15.271 14.1048 16.2712 13.1046C17.2714 12.1044 17.8333 10.7478 17.8333 9.33333C17.8333 7.91885 17.2714 6.56229 16.2712 5.5621C15.271 4.5619 13.9145 4 12.5 4C11.0855 4 9.72896 4.5619 8.72876 5.5621C7.72857 6.56229 7.16667 7.91885 7.16667 9.33333Z" stroke="#9AD953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </span>
+                        <h4 class="my-5 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out">480,000+ Clients</h4>
+                        <p class="transition-all duration-[0.5s] ease-in-out m-0 text-[#b6b6b6] font-normal text-[16px]">One of the fundamental principles of trading is risk management. Successful traders carefully manage their capital,</p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="w-[33.33%] px-3">
+                    <div class="card transition-all duration-[0.5s] ease-in-out rounded-[12px] bg-[#1f1f1f] hover:bg-[#9ad953] text-[#b6b6b6] py-10 px-8 text-center">
+                        <span class="w-[80px] min-w-[80px] h-[80px] flex items-center justify-center bg-[#141414] rounded-full p-4 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none"><path d="M16.4978 2.66602L16.6552 2.67535L16.7338 2.68602L16.8152 2.70335L16.9632 2.74868C17.0654 2.78637 17.1626 2.83652 17.2525 2.89802L17.3912 3.00735L17.7312 3.29802C20.4209 5.5321 23.8203 6.73175 27.3165 6.68068L27.7725 6.66735C28.0706 6.65375 28.3647 6.74056 28.6076 6.91388C28.8506 7.08721 29.0284 7.33702 29.1125 7.62335C29.7677 9.85212 29.9682 12.1899 29.7021 14.4976C29.436 16.8054 28.7086 19.0362 27.5634 21.0573C26.4181 23.0785 24.8782 24.8488 23.0353 26.263C21.1923 27.6773 19.0838 28.7067 16.8352 29.29C16.6157 29.3469 16.3853 29.3469 16.1658 29.29C13.9171 28.7068 11.8085 27.6776 9.96536 26.2634C8.12224 24.8492 6.58222 23.0789 5.43681 21.0577C4.2914 19.0365 3.56398 16.8057 3.29777 14.4979C3.03156 12.19 3.232 9.85221 3.88718 7.62335C3.97132 7.33702 4.1491 7.08721 4.39204 6.91388C4.63498 6.74056 4.92905 6.65375 5.22718 6.66735C8.87713 6.83419 12.4579 5.63267 15.2685 3.29802L15.6192 2.99802L15.7472 2.89802C15.8371 2.83652 15.9343 2.78637 16.0365 2.74868L16.1858 2.70335C16.2381 2.69073 16.2911 2.68138 16.3445 2.67535L16.4978 2.66602ZM21.4445 12.39C21.3207 12.266 21.1736 12.1677 21.0118 12.1006C20.8499 12.0335 20.6764 11.999 20.5012 11.999C20.326 11.999 20.1525 12.0335 19.9906 12.1006C19.8287 12.1677 19.6817 12.266 19.5578 12.39L15.1672 16.7793L13.4432 15.0567L13.3178 14.946C13.0499 14.7388 12.713 14.6414 12.3758 14.6735C12.0386 14.7056 11.7262 14.8649 11.5022 15.119C11.2781 15.3731 11.1592 15.7029 11.1695 16.0415C11.1799 16.3801 11.3187 16.7021 11.5578 16.942L14.2245 19.6087L14.3498 19.7193C14.6064 19.9184 14.9267 20.0169 15.2508 19.9965C15.5748 19.9762 15.8803 19.8383 16.1098 19.6087L21.4432 14.2753L21.5538 14.15C21.7528 13.8935 21.8514 13.5731 21.831 13.2491C21.8107 12.9251 21.6727 12.6196 21.4432 12.39H21.4445Z" stroke="#9AD953" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                        </span>
+                        <h4 class="my-5 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out">Trusted and Secure</h4>
+                        <p class="transition-all duration-[0.5s] ease-in-out m-0 text-[#b6b6b6] font-normal text-[16px]">Trading is not without its challenges, as markets can be highly volatile and unpredictable. It requires discipline</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-3 - end -->
+
+
+    <!-- section-4 - Start -->
+    
+    <section class="trade-on py-[120px] bg-[#000] z-0 relative overflow-hidden">
+        <div class="animation-area absolute top-0 left-0  w-full h-full -z-[1] flex">
+            <img src="img/animation/coin.webp" alt="Button" class="absolute ltr-animation right-[81px] top-[10px]">
+            <img src="img/animation/star2.webp" alt="Button" class="absolute push_animate right-[40%] bottom-[70px]">
+            <img src="img/animation/coin_vector.webp" alt="Button" class="absolute ltr-animation right-0 bottom-0 opacity-50">
+        </div>
+        <div class="container h-full mx-auto px-3">
+            <div class="flex justify-between items-center flex-wrap">
+                <div class="w-[41.67%] px-4">
+                    <span class="font-open_sans text-[#f5c06d] text-[20px] font-bold p-0 m-0 mb-5 block transition-all duration-[0.5s] ease-in-out">Trade On Our</span>
+                    <h3 class="mb-5 font-open_sans text-[32px] text-[#fefefe] font-bold m-0 p-0 block transition-all duration-[0.5s] ease-in-out">
+                        World Class Platform 
+                    </h3>
+                    <p class="max-w-[526px] mx-auto text-[16px] text-[#b6b6b6] m-0 font-normal">Trading in financial markets involves a wide range of strategies that traders employ to make informed decisions. From trading to swing trading and long-term investing, each strategy has its own set of principles and risk factors.</p>
+                    <ul class="flex mt-6 mb-[25px] gap-4 flex-col">
+                        <li class="mb-[7px] text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                            <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                            Charts trading
+                        </li>
+                        <li class="mb-[7px] text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                            <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                            Understanding Trading Strategies 
+                        </li>
+                        <li class="mb-[7px] text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                            <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                            Risk Management in Trading 
+                        </li>
+                        <li class="mb-[7px] text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                            <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                            Technical vs. Fundamental Analysis 
+                        </li>
+                    </ul>
+                    <a href="#" class="otg-btn rotate-eff text-[18px] font-medium mt-8 px-6 gap-3 py-3 items-center transition-all duration-[0.5s] ease-in-out z-[1] cursor-pointer inline-flex overflow-hidden rounded-[12px] bg-[#f5c06d] text-[#141414] relative capitalize">
+                        Sign Up Now
+                        <i class="fa-solid fa-arrow-right transition-all duration-[0.35s] ease-in-out text-[18px]"></i>
+                    </a>
+                </div>
+                <div class="w-[50%] px-4">
+                    <div class="trad_on-thumb flex justify-end">
+                        <img src="img/trade_on.webp" alt="trade-on">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- section-4 - end -->
+    
+    <!-- section-5 - Start -->
+    <section class="people-trust py-[120px] bg-[#141414] z-0 relative overflow-hidden">
+        <div class="animation-area absolute top-0 left-0  w-full h-full -z-[1] flex">
+            <img src="img/animation/vector.webp" alt="Button" class="absolute jello left-[16%] top-[100px]">
+            <img src="img/animation/star3.webp" alt="Button" class="absolute push_animate right-[124px] top-[120px]">
+            <img src="img/animation/vector3.webp" alt="Button" class="absolute right-0 bottom-0">
+        </div>
+        <div class="container h-full mx-auto px-3">
+            <div class="flex justify-center flex-wrap">
+                <div class="w-[58.33%] px-3">
+                    <div class="heading-content mb-10 text-center">
+                        <span class="text-[#9ad953] text-[20px] mb-5 inline-block font-normal m-0">People Trust Us</span>
+                        <h3 class="mb-6 font-open_sans text-[32px] text-[#fefefe] font-bold m-0 p-0 block transition-all duration-[0.5s] ease-in-out">
+                            Millions of Users Worldwide 
+                        </h3>
+                        <p class="max-w-[678px] text-[18px] mx-auto m-0 font-normal text-[#b6b6b6]">The rise of cryptocurrencies has opened up new trading this beginners guide to cryptocurrency trading,</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-3">
+                    <div class="singletab">
+                        <ul class="tablinks flex items-center justify-center flex-wrap gap-4 mb-[60px]">
+                            <li class="mb-[7px] rounded-[12px] cursor-pointer">
+                                <button class="tto-btn text-[18px] border-[1px] border-solid border-[#f5c06d] font-medium px-10 gap-3 py-3 items-center transition-all duration-[0.5s] ease-in-out z-[1] cursor-pointer flex overflow-hidden rounded-[12px] bg-[#f5c06d] text-[#000] relative capitalize">
+                                    <i class="fa-solid fa-video"></i>
+                                    Test Your Knowledge
+                                </button>
+                            </li>
+                            <li class="mb-[7px] rounded-[12px] cursor-pointer">
+                                <button class="tto-btn text-[18px] border-[1px] border-solid border-[#f5c06d] font-medium px-10 gap-3 py-3 items-center transition-all duration-[0.4s] ease-in-out z-[1] cursor-pointer flex overflow-hidden rounded-[12px] bg-transparent hover:bg-[#f5c06d] text-[#fefefe] hover:text-[#000] relative capitalize">
+                                    <i class="fa-solid fa-video text-[#f5c06d]  transition-all duration-[0.4s] ease-in-out"></i>
+                                    Test Your Knowledge
+                                </button>
+                            </li>
+                            <li class="mb-[7px] rounded-[12px] cursor-pointer">
+                                <button class="tto-btn text-[18px] border-[1px] border-solid border-[#f5c06d] font-medium px-10 gap-3 py-3 items-center transition-all duration-[0.4s] ease-in-out z-[1] cursor-pointer flex overflow-hidden rounded-[12px] bg-transparent hover:bg-[#f5c06d] text-[#fefefe] hover:text-[#000] relative capitalize">
+                                    <i class="fa-solid fa-video text-[#f5c06d] transition-all duration-[0.4s] ease-in-out"></i>
+                                    Test Your Knowledge
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tabcontects relative">
+                            <div class="tabitem">
+                                <div class="flex flex-wrap justify-between items-center">
+                                    <div class="w-[58.33%] px-3">
+                                        <div class="people_trust overflow-hidden p-5 relative z-0 flex items-center justify-center after:absolute after:content-[''] after:bg-[#f5c06d] after:w-[374px] after:h-[274px] after:rounded-bl-xl after:left-0 after:bottom-0 after:-z-[1]">
+                                            <img src="img/people_trust_video-1.webp" alt="video" class="rounded-[24px] w-full">
+                                            <a href="#" class="popup-video flex items-center justify-center transition-all duration-[0.5s] ease-in-out z-0 w-[40px] min-w-[40px] h-[40px] rounded-full absolute">
+                                                <i class="fa-solid fa-play text-[#fefefe] text-[24px] flex items-center justify-center rounded-full w-[80px] min-w-[80px] h-[80px]"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="w-[41.67%] px-3">
+                                        <h4 class="mb-4 font-open_sans font-bold text-[24px] text-[#fefefe] p-0 m-0 block">What you will learn</h4>
+                                        <p class="max-w-[526px] text-[#b6b6b6] m-0 text-[16px] font-normal">The rise of cryptocurrencies has opened up new trading In this beginners guide to cryptocurrency trading we demystify the world of digital currencies</p>
+                                        <ul class="flex flex-wrap mt-6 mb-[25px] gap-5">
+                                            <li class="text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                                                <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                                                Charts trading
+                                            </li>
+                                            <li class="text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                                                <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                                                Supreme Authority 
+                                            </li>
+                                            <li class="text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                                                <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                                                Worldly Power 
+                                            </li>
+                                            <li class="text-[18px] gap-3 items-center flex text-[#b6b6b6] m-0">
+                                                <i class="fa-regular fa-circle-check text-[#f5c06d] text-[20px]"></i>
+                                                Global Dominance 
+                                            </li>
+                                        </ul>
+                                        <div class="mt-10">
+                                            <div class="counter-area flex gap-10">
+                                                <div class="counter-part">
+                                                    <div class="counters flex">
+                                                        <span class="text-[#f5c06d] font-open_sans font-bold text-[56px]">12K</span>
+                                                    </div>
+                                                    <div class="mt-4 inline-block font-normal text-[16px] text-[#b6b6b6] m-0 ">Users Joined</div>
+                                                </div>
+                                                <div class="counter-part">
+                                                    <div class="counters flex">
+                                                        <span class="text-[#f5c06d] font-open_sans font-bold text-[56px]">5.5M</span>
+                                                    </div>
+                                                    <div class="mt-4 inline-block font-normal text-[16px] text-[#b6b6b6] m-0 ">Monthly Voulme (In USD)</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-5 - end -->
+    
+    <!-- Footer - Start -->
+    
+    <footer class="footer-area bg-[#000] z-0 pt-0 relative overflow-hidden">
+        <div class="animation-area absolute top-0 left-0  w-full h-full -z-[1] flex">
+            <img src="img/animation/vector.webp" alt="Button" class="absolute jello left-[80px] top-[216px]">
+            <img src="img/animation/vector4.webp" alt="Button" class="absolute right-0 bottom-0">
+        </div>
+        <div class="container h-full mx-auto px-3">
+            <div class="flex flex-wrap py-[120px]">
+                <!-- 1 -->
+                <div class="w-[25%] px-3">
+                    <div class="nav-1">
+                        <h4 class="mb-8 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out ">Quick Link</h4>
+                        <div class="footer-menu">
+                            <ul class="menu p-0 m-0">
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Markets
+                                    </a>
+                                </li>
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Education
+                                    </a>
+                                </li>
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Support
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="w-[25%] px-3">
+                    <div class="nav-2">
+                        <h4 class="mb-8 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out ">Company</h4>
+                        <div class="footer-menu">
+                            <ul class="menu p-0 m-0">
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        About
+                                    </a>
+                                </li>
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Careers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="w-[25%] px-3">
+                    <div class="nav-3">
+                        <h4 class="mb-8 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out ">Legal</h4>
+                        <div class="footer-menu">
+                            <ul class="menu p-0 m-0">
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Terms Conditions
+                                    </a>
+                                </li>
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Privacy-Policy
+                                    </a>
+                                </li>
+                                <li class="menu-item mb-4 m-0 text-[#b6b6b6]">
+                                    <a href="#" class="relative text-[#b6b6b6] flex items-center hover:pl-4 transition-all duration-[0.5s] ease-in-out">
+                                        <i class="fa-solid fa-angle-right absolute text-[#b6b6b6] opacity-0 -left-[10] text-[14px] transition-all duration-[0.5s] ease-in-out"></i>
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="w-[25%] px-3">
+                    <div class="nav-4">
+                        <h4 class="mb-8 font-open_sans text-[#fefefe] text-[24px] font-bold p-0 m-0 block transition-all duration-[0.5s] ease-in-out ">Contact Us</h4>
+                        <div class="footer-menu flex flex-col gap-4">
+                            <a href="#" class="text-[#b6b6b6] flex items-center transition-all duration-[0.5s] ease-in-out">info@example.com</a>
+                            <a href="#" class="text-[#b6b6b6] flex items-center transition-all duration-[0.5s] ease-in-out">+0123 456 789</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="w-full border-[1px] border-solid border-t-[#9ad953]/[0.5] py-8">
+                    <div class="footer-copyright flex items-center justify-between gap-[60px]">
+                        <p class="text-[16px] text-left font-normal text-[#b6b6b6] m-0">
+                            Copyright © 2024 
+                            <a href="#" class="text-[#9ad953]">Tradez</a>
+                            - All Rights Reserved 
+                        </p>
+                        <ul class="social-area flex items-center justify-center gap-3">
+                            <li>
+                                <a href="#" class="flex items-center justify-center w-[40px] min-w-[40px] h-[40px] bg-[#232627] hover:bg-[#9ad953] transition-all duration-[0.5s] ease-in-out rounded-[12px] text-[24px]">
+                                    <i class="fa-brands fa-facebook-f text-[#fefefe] text-[20px] transition-all duration-[0.5s] ease-in-out"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-center w-[40px] min-w-[40px] h-[40px] bg-[#232627] hover:bg-[#9ad953] transition-all duration-[0.5s] ease-in-out rounded-[12px] text-[24px]">
+                                    <i class="fa-brands fa-twitter text-[#fefefe] text-[20px] transition-all duration-[0.5s] ease-in-out"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-center w-[40px] min-w-[40px] h-[40px] bg-[#232627] hover:bg-[#9ad953] transition-all duration-[0.5s] ease-in-out rounded-[12px] text-[24px]">
+                                    <i class="fa-brands fa-instagram text-[#fefefe] text-[20px] transition-all duration-[0.5s] ease-in-out"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-center w-[40px] min-w-[40px] h-[40px] bg-[#232627] hover:bg-[#9ad953] transition-all duration-[0.5s] ease-in-out rounded-[12px] text-[24px]">
+                                    <i class="fa-brands fa-discord text-[#fefefe] text-[20px] transition-all duration-[0.5s] ease-in-out"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center justify-center w-[40px] min-w-[40px] h-[40px] bg-[#232627] hover:bg-[#9ad953] transition-all duration-[0.5s] ease-in-out rounded-[12px] text-[24px]">
+                                    <i class="fa-brands fa-behance text-[#fefefe] text-[20px] transition-all duration-[0.5s] ease-in-out"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Footer - end -->
+    
+    <!-- js-files  -->
+    <script src="js/J-query.min.js"></script>
+    <script src="js/tailwind.config.js"></script>
+
+    <script>
+        $(document).mousemove(function (e) {
+            $('.cursor .cursor-outer')
+                .eq(0)
+                .css({
+                    left: e.pageX,
+                    top: e.pageY
+                });
+            setTimeout(function () {
+                $('.cursor .cursor-inner')
+                    .eq(0)
+                    .css({
+                        left: e.pageX,
+                        top: e.pageY
+                    });
+            }, 200);
+        });
+    </script>
+    <script>
+        {
+            const header = document.querySelector(".head");
+            const toggleClass = "is-sticky";
+
+            window.addEventListener("scroll", () => {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > 300) {
+                    header.classList.add(toggleClass);
+                } else {
+                    header.classList.remove(toggleClass);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

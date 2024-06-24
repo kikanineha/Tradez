@@ -1,0 +1,357 @@
+*{
+  box-sizing: border-box;
+}
+
+.cursor div {
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+}
+.container{
+  max-width: 1320px !important;
+}
+
+/* sticky-header-code */
+.header{
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.header.is-sticky{
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  animation: slideDown 0.85s ease-out;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* header-code */
+
+.rotate-eff:hover i, .cmd-btn:hover i, .under-text:hover i {
+  transform: rotate(-45deg);
+}
+/* Frist section  */
+.ltr-animation{
+  animation: ltr-animation 5s linear infinite;
+}
+@keyframes ltr-animation {
+  0%{
+    transform: translateX(15px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(15px);
+  }
+  
+}
+.push_animate{
+  animation: push-animate 5s linear infinite;
+}
+@keyframes push-animate {
+  0%{
+    transform:scale(0.9);
+    opacity: 0.7;
+  }
+  50%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  
+}
+.preview-skew{
+  animation: preview-skew 5s linear infinite;
+}
+@keyframes preview-skew {
+  0%{
+    transform: translateX(-15px);
+  }
+  50%{
+    transform: translateX(15px) rotate(20deg) scale(0.8);
+    opacity: 0.7;
+  }
+  100%{
+    transform: translateX(-15px);
+  }
+  
+}
+.jello{
+  animation: jello 10s linear infinite;
+}
+@keyframes jello {
+  0%, 11.1%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  22.2% {
+      transform: skewX(-6deg) skewY(-6deg);
+  }
+  33.3% {
+      transform: skewX(6.25deg) skewY(6.25deg);
+  }
+  44.4% {
+      transform: skewX(-6.125deg) skewY(-6.125deg);
+  }
+  55.5% {
+      transform: skewX(6deg) skewY(6.25deg);
+  }
+  66.6% {
+      transform: skewX(-4deg) skewY(-4deg);
+  }
+  77.7% {
+      transform: skewX(4deg) skewY(4deg);
+  }
+  88.8% {
+      transform: skewX(-5deg) skewY(-5deg);
+  }
+    
+}
+.round-text {
+  animation: rotate 20s normal linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-animation:hover .round-text{
+  animation-play-state: paused;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  width: 539px;
+  height: 539px;
+  border-radius: 539px;
+  opacity: 0.35;
+  background-color: #9ad953;
+  filter: blur(200px);
+  top: 18%;
+  right: 12%;
+  z-index: 1;
+}
+.header ul li:hover .submenu{
+  opacity: 1;
+  visibility: visible;
+  top: 110%;
+}
+.header ul li .submenu li:hover > .small-menu{
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+/* section-3 */
+.card:hover h4{
+  color: #141414;
+}
+.card:hover p{
+  color: #141414;
+}
+/* sectio-5 */
+.tabcontects .people_trust a i{
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+}
+.popup-video:before {
+  border-left: 60px solid #9ad953;
+}
+.popup-video:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-right: 60px solid #9ad953;
+  border-bottom: 60px solid transparent;
+  border-radius: 50%;
+  animation: rotateIn 3s linear infinite;
+}
+@keyframes rotateIn {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* footer-code */
+.footer-area .menu .menu-item a:hover i{
+  opacity: 1;
+  left: 0;
+}
+.footer-area .social-area li a:hover i{
+  color: #141414;
+}
+
+/* -------------- button-code --------------- */
+/* green to yellow */
+.gto-btn{
+  white-space: nowrap;
+}
+.gto-btn::before{
+  top: -26px;
+  left: -26px;
+} 
+.gto-btn:hover::before{
+  top: -33px;
+  left: 20%;
+} 
+.gto-btn::after {
+  left: calc(100% + 1.7em);
+  top: calc(100% + 1.7em);
+}
+.gto-btn:hover::after {
+  left: calc(100% - 3em);
+  bottom: -33px;
+}
+.gto-btn::before, .gto-btn::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5c06d;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all .5s ease-in-out;
+}
+.gto-btn:hover::before, .gto-btn:hover::after{
+  width: 410px;
+  height: 410px;
+}
+/* black to yellow */
+.bto-btn{
+  white-space: nowrap;
+}
+.bto-btn::before{
+  top: -26px;
+  left: -26px;
+} 
+.bto-btn:hover::before{
+  top: -33px;
+  left: 20%;
+} 
+.bto-btn::after {
+  left: calc(100% + 1.7em);
+  top: calc(100% + 1.7em);
+}
+.bto-btn:hover::after {
+  left: calc(100% - 3em);
+  bottom: -33px;
+}
+.bto-btn::before, .bto-btn::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5c06d;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all .5s ease-in-out;
+}
+.bto-btn:hover::before, .bto-btn:hover::after{
+  width: 410px;
+  height: 410px;
+}
+/* transparent to yellow */
+.tto-btn{
+  white-space: nowrap;
+}
+.tto-btn::before{
+  top: -26px;
+  left: -26px;
+} 
+.tto-btn:hover::before{
+  top: -33px;
+  left: 20%;
+} 
+.tto-btn::after {
+  left: calc(100% + 1.7em);
+  top: calc(100% + 1.7em);
+}
+.tto-btn:hover::after {
+  left: calc(100% - 3em);
+  bottom: -33px;
+}
+.tto-btn::before, .tto-btn::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f5c06d;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all .5s ease-in-out;
+}
+.tto-btn:hover::before, .tto-btn:hover::after{
+  width: 410px;
+  height: 410px;
+}
+.tto-btn:hover i{
+  color: #000;
+}
+/* yellow to green*/
+.otg-btn{
+  white-space: nowrap;
+}
+.otg-btn::before{
+  top: -26px;
+  left: -26px;
+} 
+.otg-btn:hover::before{
+  top: -33px;
+  left: 20%;
+} 
+.otg-btn::after {
+  left: calc(100% + 1.7em);
+  top: calc(100% + 1.7em);
+}
+.otg-btn:hover::after {
+  left: calc(100% - 3em);
+  bottom: -33px;
+}
+.otg-btn::before, .otg-btn::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #9ad953;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all .5s ease-in-out;
+}
+.otg-btn:hover::before, .otg-btn:hover::after{
+  width: 410px;
+  height: 410px;
+}
